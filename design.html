@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Design System</title>
+  </head>
+  <body>
+    <!-- =======================================================================
+    | Navbar
+    ======================================================================= -->
+    <nav class="navbar">
+      <div class="navbar-center">
+        <div class="logo">
+          <a href="#">logo</a>
+        </div>
+        <div class="spacer"></div>
+        <div id="nav-toggle-button" class="menu">
+          <span class="material-icons material-icons-outlined"> menu </span>
+        </div>
+      </div>
+    </nav>
+    <!-- =======================================================================
+    | End Navbar
+    ======================================================================= -->
+
+    <!-- =======================================================================
+    | Hero section
+    ======================================================================= -->
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Hero headline, h1 tag. Lorem ipsum dolor sit amet.</h1>
+        <h2>
+          Hero subheadline, h2 tag. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Quidem, exercitationem.
+        </h2>
+        <p>
+          <button class="btn btn-brand">Call to Action btn-brand</button>
+        </p>
+      </div>
+    </div>
+    <!-- =======================================================================
+    | End Hero section
+    ======================================================================= -->
+
+    <div class="container">
+      <h1>h1 Design system</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae sint
+        saepe cumque tenetur, quasi quisquam maiores eaque iure harum in!
+      </p>
+      <h2>h2 This is inside a container class</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae sint
+        saepe cumque tenetur, quasi quisquam maiores eaque iure harum in!
+      </p>
+      <h3>h3 That's why there is padding</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae sint
+        saepe cumque tenetur, quasi quisquam maiores eaque iure harum in!
+      </p>
+      <h4>h4 On the left and right side</h4>
+      <p>
+        Lorem ipsum <a href="#">dolor</a> sit, amet consectetur adipisicing
+        elit. Quae sint saepe cumque tenetur, quasi quisquam maiores eaque iure
+        harum in!
+      </p>
+      <h5>h5 Design system</h5>
+      <p>
+        Lorem ipsum dolor sit,
+        <a href="#">amet consectetur adipisicing</a> elit. Quae sint saepe
+        cumque tenetur, quasi quisquam maiores eaque iure harum in!
+      </p>
+      <h6>h6 Design system</h6>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae sint
+        saepe cumque tenetur, quasi quisquam maiores eaque iure harum in!
+      </p>
+
+      <p>
+        Paragraph Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Laudantium, molestiae accusamus quas, praesentium neque nostrum minus
+        maxime, inventore alias aperiam dolorem nihil dicta eum illum corporis
+        repellendus delectus et deserunt! Ratione, totam? Voluptatum possimus
+        optio commodi quod odio officiis autem!
+      </p>
+    </div>
+
+    <h3>image - not in container class</h3>
+    <img src="./images/beach.jpg" alt="beach" />
+
+    <div class="container">
+      <h3>form - inside container</h3>
+      <form>
+        <input type="text" placeholder="input" />
+        <textarea placeholder="texarea"></textarea>
+        <input type="checkbox" />
+        <input type="radio" />
+        <select name="" id="">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          <option>Option 4</option>
+        </select>
+      </form>
+      <h3>list</h3>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+      <h3>buttons</h3>
+      <button class="btn btn-brand">brand</button>
+      <button class="btn btn-primary">primary</button>
+      <button class="btn btn-success">success</button>
+      <button class="btn btn-accent">accent</button>
+      <button class="btn btn-warning">warning</button>
+      <button class="btn btn-danger">danger</button>
+
+      <h3>button links</h3>
+      <a href="#" class="btn btn-brand">brand</a>
+      <a href="#" class="btn btn-primary">primary</a>
+      <a href="#" class="btn btn-success">success</a>
+      <a href="#" class="btn btn-accent">accent</a>
+      <a href="#" class="btn btn-warning">warning</a>
+      <a href="#" class="btn btn-danger">danger</a>
+    </div>
+
+    <!-- =======================================================================
+    | Section - 2 Columns
+    ======================================================================= -->
+
+    <section class="lightgray-bg">
+      <div class="container text-center">
+        <h2>section and col-2 layout</h2>
+        <div class="col-2">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium laborum nobis porro provident sequi nisi laudantium
+              magni corrupti quas facere.
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary text-center">learn more...</a>
+            </p>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium laborum nobis porro provident sequi nisi laudantium
+              magni corrupti quas facere.
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary text-center">learn more...</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =======================================================================
+    | End Section - 2 Columns
+    ======================================================================= -->
+
+    <!-- =======================================================================
+    | Section - 3 Columns
+    ======================================================================= -->
+
+    <section>
+      <div class="container text-center">
+        <h2>section and col-3 layout</h2>
+        <div class="col-3">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium laborum nobis porro provident sequi nisi laudantium
+              magni corrupti quas facere.
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary text-center">learn more...</a>
+            </p>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium laborum nobis porro provident sequi nisi laudantium
+              magni corrupti quas facere.
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary text-center">learn more...</a>
+            </p>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium laborum nobis porro provident sequi nisi laudantium
+              magni corrupti quas facere.
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary text-center">learn more...</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =======================================================================
+    | End Section - 3 Columns
+    ======================================================================= -->
+
+    <!-- =======================================================================
+    | Contact Boxes
+    ======================================================================= -->
+    <section class="lightgray-bg">
+      <div class="container">
+        <h2>Contact boxes</h2>
+        <div class="col-3">
+          <!-- Contact box  -->
+          <div class="contact-box">
+            <div class="icon material-icons">
+              <span class="material-icons-outlined"> call </span>
+            </div>
+            <div class="contact-info">
+              <div class="headline">Call us!</div>
+              <div class="info">
+                <a href="tel:888-888-8888">888-888-8888</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Contact box  -->
+          <!-- Contact box  -->
+          <div class="contact-box">
+            <div class="icon material-icons">
+              <span class="material-icons-outlined"> mail </span>
+            </div>
+            <div class="contact-info">
+              <div class="headline">Email us</div>
+              <div class="info">
+                <a href="mailto:help@company.com">help@company.com</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Contact box  -->
+          <!-- Contact box  -->
+          <div class="contact-box">
+            <div class="icon material-icons">
+              <span class="material-icons-outlined"> schedule </span>
+            </div>
+            <div class="contact-info">
+              <div class="headline">Our hours</div>
+              <div class="info">Mon - Fri, 8:00a - 4:00p</div>
+            </div>
+          </div>
+          <!-- End Contact box  -->
+        </div>
+      </div>
+    </section>
+    <!-- =======================================================================
+    | End Contact Boxes
+    ======================================================================= -->
+    <!-- =======================================================================
+    | Banner
+    ======================================================================= -->
+    <section class="banner">
+      <div class="container">
+        <h2>Banner for small height content</h2>
+      </div>
+    </section>
+    <!-- =======================================================================
+    | End Banner
+    ======================================================================= -->
+  </body>
+</html>
