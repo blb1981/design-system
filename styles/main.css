@@ -53,10 +53,14 @@ section {
   padding: 4rem 0;
 }
 
+footer {
+  padding: 2rem 0;
+}
+
 .btn {
   padding: 0.25rem 0.5rem;
-  border: 1px solid #777;
-  border-radius: 2px;
+  border: 0 solid #777;
+  border-radius: 0;
   cursor: pointer;
   font: inherit;
   display: inline-block;
@@ -68,43 +72,48 @@ a.btn {
 }
 
 .btn:hover {
-  -webkit-box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.11);
-          box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.11);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .btn-brand {
-  background-color: #2a52a2;
+  background-color: #3d63ae;
+  color: white;
+}
+
+.btn-brand-secondary {
+  background-color: #b59736;
   color: white;
 }
 
 .btn-primary {
   background-color: blue;
   color: white;
-  border: 1px solid #6b6bff;
+  border: 0 solid #6b6bff;
 }
 
 .btn-success {
   background-color: green;
   color: white;
-  border: 1px solid #518a51;
+  border: 0 solid #518a51;
 }
 
 .btn-accent {
   background-color: lightblue;
   color: black;
-  border: 1px solid #cbdfe6;
+  border: 0 solid #cbdfe6;
 }
 
 .btn-warning {
   background-color: yellow;
   color: black;
-  border: 1px solid #f5f599;
+  border: 0 solid #f5f599;
 }
 
 .btn-danger {
   background-color: red;
   color: white;
-  border: 1px solid #ff7575;
+  border: 0 solid #ff7575;
 }
 
 .contact-box {
@@ -140,7 +149,7 @@ a.btn {
 }
 
 .contact-box .contact-info a {
-  color: #2a52a2;
+  color: #3d63ae;
   text-decoration: none;
 }
 
@@ -193,8 +202,6 @@ a.btn {
   .col-4 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
   }
 }
 
@@ -208,7 +215,8 @@ a.btn {
 
 @media screen and (min-width: 992px) {
   .col-2,
-  .col-3 {
+  .col-3,
+  .col-4 {
     gap: 3rem;
   }
 }
@@ -337,12 +345,32 @@ section.banner {
   padding: 2rem 0;
 }
 
+footer {
+  line-height: 1.75;
+}
+
+footer a {
+  color: white;
+}
+
 .lightgray-bg {
   background-color: #f3f3f3;
 }
 
 .dark-bg {
   background-color: #333;
+}
+
+.brand-bg {
+  background-color: #3d63ae;
+}
+
+.text-light {
+  color: white;
+}
+
+.text-small {
+  font-size: 0.75rem;
 }
 
 .text-center {

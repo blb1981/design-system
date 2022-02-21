@@ -17,11 +17,18 @@ a.btn {
   box-shadow: $btn-shadow;
 }
 
-// Feedback buttons
+// Brand buttons
 .btn-brand {
   background-color: $clr-brand;
   color: $clr-white;
 }
+
+.btn-brand-secondary {
+  background-color: $clr-brand-secondary;
+  color: $clr-white;
+}
+
+// Feedback buttons
 .btn-primary {
   background-color: $clr-primary;
   color: $clr-white;

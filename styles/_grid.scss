@@ -30,10 +30,11 @@
   grid-template-columns: 1fr;
   gap: 2rem;
 }
+
 @media screen and (min-width: 600px) {
   .col-4 {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    
   }
 }
 
@@ -47,7 +48,8 @@
 // Increase gap for larger screens
 @media screen and (min-width: 992px) {
   .col-2,
-  .col-3 {
+  .col-3,
+  .col-4 {
     gap: 3rem;
   }
 }
