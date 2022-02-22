@@ -270,6 +270,24 @@ a.btn {
   color: white;
 }
 
+.navbar .horizontal-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .horizontal-menu a.active {
+  text-decoration: underline;
+}
+
+.navbar .horizontal-menu a:hover {
+  text-decoration: underline;
+}
+
+.navbar .horizontal-menu li {
+  display: inline;
+  margin-left: 1rem;
+}
+
 .nav-toggle-button {
   cursor: pointer;
 }
@@ -277,6 +295,12 @@ a.btn {
 @media screen and (min-width: 768px) {
   .nav-toggle-button {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .horizontal-menu {
+    display: none;
   }
 }
 

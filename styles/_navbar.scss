@@ -35,6 +35,25 @@
       color: $clr-white;
     }
   }
+
+  .horizontal-menu {
+    a {
+      color: $clr-white;
+      text-decoration: none;
+
+      &.active {
+        text-decoration: underline;
+      }
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    li {
+      display: inline;
+      margin-left: 1rem;
+    }
+  }
 }
 
 .nav-toggle-button {
@@ -44,6 +63,12 @@
 @media screen and (min-width: 768px) {
   .nav-toggle-button {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .horizontal-menu {
+    display: none;
   }
 }
 
