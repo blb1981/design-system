@@ -9,6 +9,7 @@
   padding: 0;
   display: grid;
   place-items: center;
+  margin-top: $hero-margin-top;
 
   .hero-content {
     width: $hero-width;

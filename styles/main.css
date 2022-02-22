@@ -233,6 +233,13 @@ a.btn {
           align-items: center;
 }
 
+.navbar.open {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
 .navbar .navbar-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -263,14 +270,49 @@ a.btn {
   color: white;
 }
 
-#nav-toggle-button {
+.nav-toggle-button {
   cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
-  #nav-toggle-button {
-    display: none;
+  .nav-toggle-button {
+    display: none !important;
   }
+}
+
+.responsive-menu {
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  background-color: #333;
+  display: none;
+}
+
+.responsive-menu.open {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  border-top: 1px solid #444;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.responsive-menu li {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #444;
+}
+
+.responsive-menu a {
+  color: white;
+  display: block;
+  width: 80rem;
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 ul {
@@ -294,6 +336,7 @@ li {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  margin-top: 3rem;
 }
 
 .hero .hero-content {
