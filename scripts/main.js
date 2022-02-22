@@ -40,3 +40,9 @@ rootEl.addEventListener('orientationchange', () => {
     closeNavMenu()
   }
 })
+
+rootEl.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeNavMenu()
+  }
+})

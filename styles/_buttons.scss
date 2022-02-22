@@ -13,7 +13,7 @@ a.btn {
   text-decoration: none;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
   box-shadow: $btn-shadow;
 }
 

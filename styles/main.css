@@ -49,14 +49,6 @@ blockquote {
   margin-left: 1rem;
 }
 
-section {
-  padding: 4rem 0;
-}
-
-footer {
-  padding: 2rem 0;
-}
-
 .btn {
   padding: 0.25rem 0.5rem;
   border: 0 solid #777;
@@ -71,7 +63,7 @@ a.btn {
   text-decoration: none;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -279,7 +271,7 @@ a.btn {
   text-decoration: underline;
 }
 
-.navbar .horizontal-menu a:hover {
+.navbar .horizontal-menu a:hover, .navbar .horizontal-menu a:focus {
   text-decoration: underline;
 }
 
@@ -412,23 +404,28 @@ section.banner {
   padding: 2rem 0;
 }
 
-footer {
+.footer {
+  padding: 2rem 0 1rem 0;
   line-height: 1.75;
 }
 
-footer a {
+.footer a {
   color: white;
 }
 
-.lightgray-bg {
+.section {
+  padding: 4rem 0;
+}
+
+.bg-lightgray {
   background-color: #f3f3f3;
 }
 
-.dark-bg {
+.bg-dark {
   background-color: #333;
 }
 
-.brand-bg {
+.bg-brand {
   background-color: #424c61;
 }
 
