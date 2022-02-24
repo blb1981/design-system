@@ -1,5 +1,6 @@
 .hero {
   height: $hero-height;
+  min-height: $hero-min-height;
   background: $hero-gradient-overlay, url($hero-image);
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,6 +40,10 @@
       font-size: $hero-button-text-size;
       font-weight: $hero-button-font-weight;
     }
+  }
+
+  &.hero-sticky {
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 599px) {

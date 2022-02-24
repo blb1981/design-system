@@ -45,7 +45,8 @@
         text-decoration: underline;
       }
     }
-    a:hover, a:focus {
+    a:hover,
+    a:focus {
       text-decoration: underline;
     }
 
@@ -105,4 +106,33 @@
   top: 0;
   width: 100%;
   z-index: 1;
+}
+
+.navbar-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: $sticky-nav-bg;
+  transition: $sticky-nav-transition;
+
+  &.open {
+    background-color: $clr-brand; // For responsive nav open
+  }
+
+  &.active {
+    background-color: $sticky-nav-bg-secondary;
+    box-shadow: $sticky-nav-shadow;
+    z-index: 2;
+
+    a,
+    .logo a {
+      color: $sticky-nav-text-color-secondary;
+    }
+
+    .nav-toggle-button {
+      color: $sticky-nav-text-color-secondary;
+    }
+  }
 }

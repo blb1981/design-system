@@ -2,10 +2,11 @@
 const navMenuButton = document.getElementById('navMenuButton')
 const navbar = document.getElementById('navbar')
 const responsiveMenu = document.getElementById('responsiveMenu')
-const rootEl = this
+const faders = document.querySelectorAll('.fade-in')
 
 // Values
 const maxMenuSize = 768 // Max size in px for responsive nav menu
+const faderOptions = { threshold: 0, rootMargin: '0px 0px -250px 0px' }
 
 // Functions
 const closeNavMenu = () => {
@@ -29,20 +30,48 @@ navMenuButton.addEventListener('click', () => {
   }
 })
 
-rootEl.addEventListener('resize', () => {
-  if (rootEl.visualViewport.width + 15 > maxMenuSize) {
+window.addEventListener('resize', () => {
+  if (window.visualViewport.width + 15 > maxMenuSize) {
     closeNavMenu()
   }
 })
 
-rootEl.addEventListener('orientationchange', () => {
-  if (rootEl.visualViewport.width + 15 > maxMenuSize) {
+window.addEventListener('orientationchange', () => {
+  if (window.visualViewport.width + 15 > maxMenuSize) {
     closeNavMenu()
   }
 })
 
-rootEl.addEventListener('keydown', (e) => {
+window.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     closeNavMenu()
   }
+})
+
+// Sticky nav
+window.addEventListener('scroll', () => {
+  if (
+    window.scrollY > navbar.offsetHeight + 150 &&
+    !navbar.classList.contains('open')
+  ) {
+    navbar.classList.add('active')
+  } else {
+    navbar.classList.remove('active')
+  }
+})
+
+// Fade in
+const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return
+    } else {
+      entry.target.classList.add('appear')
+      appearOnScroll.unobserve(entry.target)
+    }
+  })
+})
+
+faders.forEach((fader) => {
+  appearOnScroll.observe(fader)
 })
