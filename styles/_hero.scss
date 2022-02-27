@@ -17,6 +17,7 @@
     max-width: $hero-max-width;
     margin: 0 auto;
     transform: translateY($hero-transform-y);
+    // background-color: rgba(0, 0, 0, 0.616);
 
     h1,
     h2 {
@@ -48,17 +49,25 @@
 }
 @media screen and (max-width: 599px) {
   .hero {
-    .hero-content {
-      h1 {
-        font-size: 1.5rem;
-      }
-      h2 {
-        font-size: 1.25rem;
-      }
-      .btn {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-      }
+    // .hero-content {
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+    }
+    .btn {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+    // }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero {
+    h1 {
+      font-size: 3rem;
     }
   }
 }

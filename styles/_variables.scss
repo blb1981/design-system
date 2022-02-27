@@ -12,14 +12,16 @@ $transition: all 0.3s ease-in-out;
 // Layout
 $section-vertical-padding: 4rem;
 $container-width: 80rem;
-$container-padding: 0 1rem;
+$container-padding: 0 2rem;
 $hero-width: 90vw;
 $hero-max-width: 40rem;
 $banner-vertical-padding: 2rem;
 
 // Colors
-$clr-brand: hsl(221, 19%, 32%);
-$clr-brand-secondary: hsl(46, 54%, 46%);
+$clr-brand: hsl(298, 48%, 41%);
+$clr-brand-light: hsl(298, 48%, 61%);
+$clr-brand-secondary: hsl(66, 92%, 61%);
+$clr-brand-secondary-light: hsl(66, 92%, 71%);
 
 $clr-primary: hsl(240, 100%, 50%);
 $clr-primary-light: hsl(240, 100%, 71%);
@@ -53,9 +55,10 @@ $clr-gray-9: #999;
 $clr-gray-light: #f3f3f3;
 
 // Typography
-$font-family-headline-1: $font-sans-serif;
-$font-family-main-1: $font-sans-serif;
+$font-family-headline-1: 'Handlee', cursive;
+$font-family-main-1: 'Montserrat', sans-serif;
 $font-color: $clr-gray-4;
+// 'Montserrat', sans-serif;
 
 // Buttons
 $btn-top-padding: 0.25rem;
@@ -68,24 +71,39 @@ $btn-shadow: none;
 $btn-margin: 0;
 
 // Navbar
-$navbar-height: 3rem;
-$navbar-background-color: $clr-gray-3;
-$navbar-text-color: $clr-white;
+$navbar-height: 4rem;
+$navbar-background-color: $clr-white;
+$navbar-text-color: $clr-gray-4;
+$navbar-logo-color: $clr-gray-4;
+$navbar-responsive-item-border-color: rgba(0, 0, 0, 0.1);
+$navbar-responsive-item-padding: 1rem;
+$navbar-responsive-menu-transition: $transition;
+$navbar-responsive-background-hover-color: $clr-brand;
+$navbar-responsive-text-hover-color: $clr-white;
+$navbar-responsive-item-margin: 0;
+
+// Sticky nav
+$sticky-nav-bg: transparent;
+$sticky-nav-text-color: $clr-gray-4;
+$sticky-nav-bg-secondary: $clr-white;
+$sticky-nav-text-color-secondary: $clr-gray-4;
+$sticky-nav-shadow: $shadow;
+$sticky-nav-transition: $transition;
 
 // Hero
-$hero-height: 50vh;
+$hero-height: 90vh;
 $hero-min-height: 25rem;
 $hero-image: '../images/hero.jpg';
 $hero-background-position: center;
 $hero-button-padding: 0.75rem 1rem;
 $hero-button-text-size: 1.25rem;
-$hero-headline-font-weight: 400;
-$hero-subheadline-font-weight: 100;
+$hero-headline-font-weight: lighter;
+$hero-subheadline-font-weight: lighter;
 $hero-button-font-weight: 400;
-$hero-transform-y: 0; // Raises/lowers content in hero
+$hero-transform-y: 5rem; // Raises/lowers content in hero
 $hero-gradient-overlay: linear-gradient(
   to bottom,
-  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.01),
   rgba(0, 0, 0, 0.99)
 );
 $hero-margin-top: $navbar-height;
@@ -100,14 +118,6 @@ $contact-box-icon-font-size: 2.5rem;
 // Footer
 $footer-link-text-color: $clr-white;
 $footer-vertical-padding: 2rem;
-
-// Sticky nav
-$sticky-nav-bg: transparent;
-$sticky-nav-text-color: $clr-white;
-$sticky-nav-bg-secondary: $clr-brand;
-$sticky-nav-text-color-secondary: $clr-white;
-$sticky-nav-shadow: $shadow;
-$sticky-nav-transition: $transition;
 
 // Fade in effect
 $fade-in-transition: all 750ms ease-in;

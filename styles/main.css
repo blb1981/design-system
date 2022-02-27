@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@100;400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -9,7 +10,6 @@
 
 body {
   line-height: 1.5;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #444;
   overflow-x: hidden;
 }
@@ -20,7 +20,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin: 1rem 0;
 }
 
@@ -50,6 +49,20 @@ blockquote {
   margin-left: 1rem;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Handlee", cursive;
+  letter-spacing: 0.125rem;
+}
+
 .btn {
   padding: 0.25rem 0.5rem;
   border: 0 solid #777;
@@ -58,25 +71,32 @@ blockquote {
   font: inherit;
   display: inline-block;
   margin: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 a.btn {
   text-decoration: none;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 .btn-brand {
-  background-color: #424c61;
+  background-color: #97369b;
   color: white;
 }
 
 .btn-brand-secondary {
-  background-color: #b59736;
-  color: white;
+  background-color: #e5f740;
+  color: #444;
+}
+
+.btn-brand-secondary:hover {
+  background-color: #ebf971;
 }
 
 .btn-primary {
@@ -142,14 +162,26 @@ a.btn {
 }
 
 .contact-box .contact-info a {
-  color: #424c61;
+  color: #97369b;
   text-decoration: none;
 }
 
 .container {
   max-width: 80rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
+}
+
+.container-thin {
+  max-width: 53.36rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container-thinner {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .col-2 {
@@ -215,9 +247,9 @@ a.btn {
 }
 
 .navbar {
-  background-color: #333;
-  color: white;
-  min-height: 3rem;
+  background-color: white;
+  color: #444;
+  min-height: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,25 +263,31 @@ a.btn {
   top: 0;
   width: 100%;
   z-index: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .navbar .navbar-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   max-width: 80rem;
   min-height: 100%;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .navbar .navbar-center .logo {
   text-transform: uppercase;
+  width: 16rem;
+  max-width: 75%;
 }
 
 .navbar .navbar-center .logo a {
-  color: white;
+  color: #444;
   text-decoration: none;
 }
 
@@ -260,11 +298,11 @@ a.btn {
 }
 
 .navbar .navbar-center .menu {
-  color: white;
+  color: #444;
 }
 
 .navbar .horizontal-menu a {
-  color: white;
+  color: #444;
   text-decoration: none;
 }
 
@@ -284,6 +322,9 @@ a.btn {
 
 .nav-toggle-button {
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
@@ -300,30 +341,45 @@ a.btn {
 
 .responsive-menu {
   position: fixed;
-  top: 3rem;
+  top: 4rem;
   left: 0;
-  background-color: #333;
+  background-color: white;
   display: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .responsive-menu.open {
   display: block;
   width: 100%;
   height: 100vh;
-  border-top: 1px solid #444;
+  border-top: 1px solid white;
   z-index: 1;
   overflow-y: auto;
 }
 
 .responsive-menu li {
-  padding: 0.5rem 1rem;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .responsive-menu a {
-  color: white;
+  color: #444;
   display: block;
   width: 80rem;
+  margin: 0;
+  padding: 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-family: "Handlee", cursive;
+  letter-spacing: 0.25rem;
+  font-weight: bold;
+}
+
+.responsive-menu a:hover {
+  background-color: #97369b;
+  color: white;
 }
 
 .navbar-fixed {
@@ -345,23 +401,24 @@ a.btn {
 }
 
 .navbar-sticky.open {
-  background-color: #424c61;
+  background-color: white;
 }
 
 .navbar-sticky.active {
-  background-color: #424c61;
+  background-color: white;
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  color: #444;
   z-index: 2;
 }
 
 .navbar-sticky.active a,
 .navbar-sticky.active .logo a {
-  color: white;
+  color: #444;
 }
 
 .navbar-sticky.active .nav-toggle-button {
-  color: white;
+  color: #444;
 }
 
 ul {
@@ -373,10 +430,10 @@ li {
 }
 
 .hero {
-  height: 50vh;
+  height: 90vh;
   min-height: 25rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.99))), url("../images/hero.jpg");
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.99)), url("../images/hero.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.01)), to(rgba(0, 0, 0, 0.99))), url("../images/hero.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.99)), url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -386,15 +443,15 @@ li {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .hero .hero-content {
   width: 90vw;
   max-width: 40rem;
   margin: 0 auto;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
 }
 
 .hero .hero-content h1,
@@ -403,11 +460,11 @@ li {
 }
 
 .hero .hero-content h1 {
-  font-weight: 400;
+  font-weight: lighter;
 }
 
 .hero .hero-content h2 {
-  font-weight: 100;
+  font-weight: lighter;
 }
 
 .hero .hero-content p {
@@ -426,15 +483,21 @@ li {
 }
 
 @media screen and (max-width: 599px) {
-  .hero .hero-content h1 {
+  .hero h1 {
     font-size: 1.5rem;
   }
-  .hero .hero-content h2 {
+  .hero h2 {
     font-size: 1.25rem;
   }
-  .hero .hero-content .btn {
+  .hero .btn {
     font-size: 1rem;
     padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero h1 {
+    font-size: 3rem;
   }
 }
 
@@ -494,7 +557,7 @@ section.banner {
 }
 
 .bg-brand {
-  background-color: #424c61;
+  background-color: #97369b;
 }
 
 .text-light {
@@ -507,4 +570,42 @@ section.banner {
 
 .text-center {
   text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.img-h-10 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 10rem;
+}
+
+.img-h-20 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 20rem;
+}
+
+.img-h-30 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 30rem;
+}
+
+@media screen and (max-width: 599px) {
+  .reverse-vertical {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }

@@ -7,13 +7,15 @@
   font: inherit;
   display: inline-block;
   margin: $btn-margin;
+  transition: $transition;
 }
 
 a.btn {
   text-decoration: none;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   box-shadow: $btn-shadow;
 }
 
@@ -25,7 +27,11 @@ a.btn {
 
 .btn-brand-secondary {
   background-color: $clr-brand-secondary;
-  color: $clr-white;
+  color: $clr-gray-4;
+}
+
+.btn-brand-secondary:hover {
+  background-color: $clr-brand-secondary-light;
 }
 
 // Feedback buttons

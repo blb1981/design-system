@@ -3,10 +3,12 @@ const navMenuButton = document.getElementById('navMenuButton')
 const navbar = document.getElementById('navbar')
 const responsiveMenu = document.getElementById('responsiveMenu')
 const faders = document.querySelectorAll('.fade-in')
+const yearElement = document.getElementById('year')
 
 // Values
 const maxMenuSize = 768 // Max size in px for responsive nav menu
 const faderOptions = { threshold: 0, rootMargin: '0px 0px -250px 0px' }
+const date = new Date()
 
 // Functions
 const closeNavMenu = () => {
@@ -75,3 +77,6 @@ const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
 faders.forEach((fader) => {
   appearOnScroll.observe(fader)
 })
+
+// Year for copyright at bottom
+yearElement.innerText = date.getFullYear()
