@@ -93,6 +93,7 @@
     border-top: 1px solid $navbar-background-color;
     z-index: 1;
     overflow-y: auto;
+    overflow-x: hidden;
   }
 
   li {

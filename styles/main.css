@@ -166,6 +166,10 @@ a.btn {
   text-decoration: none;
 }
 
+.contact-box .contact-info .info {
+  text-align: left;
+}
+
 .container {
   max-width: 80rem;
   margin: 0 auto;
@@ -356,6 +360,7 @@ a.btn {
   border-top: 1px solid white;
   z-index: 1;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .responsive-menu li {
@@ -450,8 +455,8 @@ li {
   width: 90vw;
   max-width: 40rem;
   margin: 0 auto;
-  -webkit-transform: translateY(5rem);
-          transform: translateY(5rem);
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
 }
 
 .hero .hero-content h1,
@@ -532,14 +537,15 @@ section.banner {
   opacity: 1;
 }
 
-.from-left {
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.from-right {
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+@media screen and (min-width: 768px) {
+  .from-left {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .from-right {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
 }
 
 .from-left.appear,
@@ -609,3 +615,4 @@ section.banner {
             flex-direction: column-reverse;
   }
 }
+/*# sourceMappingURL=main.css.map */

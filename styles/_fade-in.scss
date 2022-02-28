@@ -8,13 +8,14 @@
     opacity: 1;
   }
 }
+@media screen and (min-width: 768px) {
+  .from-left {
+    transform: translateX(-50%);
+  }
 
-.from-left {
-  transform: translateX(-50%);
-}
-
-.from-right {
-  transform: translateX(50%);
+  .from-right {
+    transform: translateX(50%);
+  }
 }
 
 .from-left,
